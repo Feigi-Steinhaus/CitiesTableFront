@@ -1,0 +1,41 @@
+<br><br>
+<div class="container">
+  <div class="card">
+    <p-table #dt1 [value]="filteredCities" [globalFilterFields]="['name']" selectionMode="single"
+       dataKey="id" [rows]="5" [paginator]="true"
+      stateStorage="session" stateKey="statedemo-session">
+      <ng-template pTemplate="caption">
+        <div class="header">
+          <button pButton pRipple label="הוספה" icon="pi pi-plus" class="p-button-success add-button"
+            (click)="openAddComponent()" pTooltip="הוסף יישוב"></button>
+          <p-iconField iconPosition="right" class="search-field">
+            <p-inputIcon>
+              <!-- <i class="pi pi-search"></i> -->
+            </p-inputIcon>
+            <input pInputText type="text" (input)="filterGlobal($event)" placeholder="חיפוש יישוב" />
+          </p-iconField>
+        </div>
+      </ng-template>
+      <ng-template pTemplate="header" class="dir">
+        <tr>
+          <th pSortableColumn="name" style="width: 80%;">
+            שם היישוב <p-sortIcon field="name" />
+          </th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-city>
+        <tr [pSelectableRow]="city">
+          <td>
+            {{ city.name }}
+          </td>
+          <td class="button-column">
+            <button pButton type="button" class="p-button-secondary" icon="pi pi-pencil"
+              (click)="onEdit(city)"></button>
+            <button pButton type="button" class="p-button-danger" icon="pi pi-trash"
+              (click)="onDelete(city)"></button>
+          </td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
+</div>

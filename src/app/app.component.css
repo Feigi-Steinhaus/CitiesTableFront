@@ -1,0 +1,92 @@
+/* 
+* {
+    font-family: "Varela Round", sans-serif !important;
+    direction: rtl;
+    text-align: center;
+}
+
+.p-button-secondary,
+.p-button-danger {
+    background-color: transparent;
+    border: none;
+    color: black;
+}
+
+.p-button-secondary:hover,
+.p-button-danger:hover {
+    background-color: rgb(209, 208, 208);
+}
+
+.card{
+    border:1px solid black;
+    width: 80%;
+    margin:5%;
+} */
+
+
+
+* {
+    font-family: "Varela Round", sans-serif !important;
+    direction: rtl;
+    text-align: center;
+}
+
+.p-button-secondary,
+.p-button-danger,
+.p-button-success {
+    background-color: transparent;
+    border: none;
+    color: black;
+}
+
+.p-button-secondary:hover,
+.p-button-danger:hover,
+.p-button-success:hover {
+    background-color: rgb(209, 208, 208);
+}
+
+.p-button-success{
+    border:1px solid rgb(221, 220, 220)
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+   
+}
+
+.card {
+    width: 80%;
+    border-radius: 10px;
+    /* עיגול הקצוות של הטבלה */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* הוספת צללה */
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.add-button {
+    margin-left:5%;
+    order: 1;
+}
+
+.search-field {
+    order: 2;
+    flex-grow: 1;
+    display: flex;
+    text-align: right;
+    align-items: flex-end;
+}
+
+.button-column {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
