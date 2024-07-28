@@ -1,34 +1,9 @@
-/* 
-* {
-    font-family: "Varela Round", sans-serif !important;
-    direction: rtl;
-    text-align: center;
-}
-
-.p-button-secondary,
-.p-button-danger {
-    background-color: transparent;
-    border: none;
-    color: black;
-}
-
-.p-button-secondary:hover,
-.p-button-danger:hover {
-    background-color: rgb(209, 208, 208);
-}
-
-.card{
-    border:1px solid black;
-    width: 80%;
-    margin:5%;
-} */
-
-
 
 * {
     font-family: "Varela Round", sans-serif !important;
     direction: rtl;
     text-align: center;
+    font-size:15px;
 }
 
 .p-button-secondary,
@@ -53,7 +28,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 100vh; */
+    height: 100vh;
    
 }
 

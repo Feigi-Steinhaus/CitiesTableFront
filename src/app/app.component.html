@@ -6,7 +6,7 @@
       stateStorage="session" stateKey="statedemo-session">
       <ng-template pTemplate="caption">
         <div class="header">
-          <button pButton pRipple label="הוספה" icon="pi pi-plus" class="p-button-success add-button"
+          <button pButton pRipple label="" icon="pi pi-plus" class="p-button-success add-button"
             (click)="openAddComponent()" pTooltip="הוסף יישוב"></button>
           <p-iconField iconPosition="right" class="search-field">
             <p-inputIcon>
@@ -18,8 +18,12 @@
       </ng-template>
       <ng-template pTemplate="header" class="dir">
         <tr>
-          <th pSortableColumn="name" style="width: 80%;">
+          <th pSortableColumn="name" style="width: 90%;">
             שם היישוב <p-sortIcon field="name" />
+          </th>
+          <th pSortableColumn="name" style="width: 5%;">
+          </th>
+          <th pSortableColumn="name" style="width: 5%;">
           </th>
         </tr>
       </ng-template>

@@ -127,7 +127,21 @@ export class AppComponent {
             this.cities = data;
             this.filteredCities = this.cities
           });
-        });
+        },
+        (err)=>{
+          if(err.status==409)
+          {
+            Swal.fire({
+              text: 'היישוב כבר קיים במערכת',
+              icon: "error",
+              showCancelButton: false,
+              showCloseButton: true,
+              confirmButtonColor: "#d33",
+              confirmButtonText: 'סגור'
+            })
+          }
+        }
+      );
       }
     });
 
